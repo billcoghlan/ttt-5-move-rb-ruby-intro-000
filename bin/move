@@ -1,5 +1,14 @@
 #!/usr/bin/env ruby
-
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
+#CLI that asks the player for the position on the board
+# that they like to fill out with an "X" or an "O",
+#convert the position to an index, update the board,
+#and displays the updated board.
+
+puts "Welcome to Tic Tac Toe!
+Where would you like to go?"
+position = gets.strip.chomp
+
+display_board(board)
